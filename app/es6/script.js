@@ -1,6 +1,3 @@
-// https://coolors.co/f05d5e-0f7173-e7ecef-272932-d8a47f
-
-
 (function() {
     const mainContainer = document.getElementById('mainContainer');
     const allResults = document.getElementById('allResults');
@@ -27,6 +24,8 @@
     }, parent)
     const makeUserBox = (obj, _name) => {
         const stream = obj.stream;
+
+        // make anchor tag and set attributes
         const anchorTagWithAttrs = setAttrs({
                                         'class': 'resultContainer',
                                         'target': '_blank',
@@ -94,6 +93,8 @@
         .then(res => res.json())
         .then(json => (json['originalUser'] = userStr, json));
     };
+
+    // get user data for each element in user array
     const resultsArr = Promise.all(userArray.map(user => getUserData(user)));
     resultsArr.then(arr => {
         domResultsArr = arr.map(obj => makeUserBox(obj, obj.originalUser));
@@ -101,9 +102,11 @@
     });
 
     const handleClick = (e) => {
+        //  first clear currently displayed user data
         while(allResults.firstElementChild) {
             allResults.removeChild(allResults.firstElementChild);
         }
+        // after clearing, display appropriate user data (all, online, offline)
         if(e.target !== e.currentTarget) {
             let id = e.target.id;
             switch(id) {
