@@ -1,0 +1,136 @@
+/* line 1, app/sass/styles.sass */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #272932; }
+
+/* line 7, app/sass/styles.sass */
+h1 {
+  margin: 0;
+  color: #F05D5E;
+  font-size: 3em;
+  font-family: 'Source Sans Pro', sans-serif; }
+
+/* line 13, app/sass/styles.sass */
+a {
+  text-decoration: none;
+  color: #E7ECEF;
+  background-color: #0F7173;
+  margin-top: 9px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px 1px #E7ECEF; }
+
+/* line 21, app/sass/styles.sass */
+.mainContainer {
+  position: relative;
+  top: 2em;
+  width: 25em;
+  font-family: 'Lato', sans-serif; }
+
+/* line 27, app/sass/styles.sass */
+#buttonsContainer {
+  display: flex;
+  position: relative;
+  top: 10px; }
+
+/* line 32, app/sass/styles.sass */
+button {
+  background-color: #D8A47F;
+  text-align: center;
+  height: 3em;
+  width: 5em;
+  border-radius: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600; }
+
+/* line 41, app/sass/styles.sass */
+#showAll {
+  color: #272932; }
+
+/* line 43, app/sass/styles.sass */
+#showOnline {
+  color: #0F7173; }
+
+/* line 45, app/sass/styles.sass */
+#showOffline {
+  color: #F05D5E; }
+
+/* line 47, app/sass/styles.sass */
+button:focus {
+  outline: none; }
+
+/* line 51, app/sass/styles.sass */
+#allResults {
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 40em; }
+
+/* line 59, app/sass/styles.sass */
+.resultContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 5em; }
+
+/* line 66, app/sass/styles.sass */
+.infoBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 8em;
+  height: 100%;
+  margin-left: 35px;
+  margin-right: 35px; }
+
+/* line 76, app/sass/styles.sass */
+.logoBox {
+  height: 100%;
+  width: 6em; }
+
+/* line 80, app/sass/styles.sass */
+.statusBox {
+  height: 90%;
+  width: 4em; }
+
+/* line 84, app/sass/styles.sass */
+.logoBox img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px; }
+
+/* line 90, app/sass/styles.sass */
+.statusBox img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px; }
+
+/* line 96, app/sass/styles.sass */
+h4 {
+  margin: 0; }
+
+@media (max-width: 565px) {
+  /* line 100, app/sass/styles.sass */
+  h1 {
+    font-size: 2em; }
+  /* line 102, app/sass/styles.sass */
+  .mainContainer {
+    width: 25em;
+    font-size: 12px; }
+  /* line 105, app/sass/styles.sass */
+  .resultContainer {
+    height: 4em; }
+  /* line 107, app/sass/styles.sass */
+  .statusbox img {
+    height: 90%; }
+  /* line 109, app/sass/styles.sass */
+  .infoBox {
+    margin-left: 20px;
+    margin-right: 20px; } }
